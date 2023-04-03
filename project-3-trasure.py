@@ -28,8 +28,6 @@ print("Your mission is to find the treasure.")
 #Write your code below this line 👇
 
 direction = input("You're at a cross road. Where do you whant to go?  Type 'left' or 'right'\n").lower()
-# lake = input("You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across\n").lower()
-# color = input("You arrive at the aisland unarmed. There is a house with 3 doors. One red, one yellow and one blue. Which color do you choose?\n").lower()
 
 if direction == 'right':
     print('You fall into a whole. Game over')
