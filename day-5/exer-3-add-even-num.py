@@ -10,8 +10,17 @@
 
 #Write your code below this row 👇
 
+# option 1
+# num = 0
+# for number in range(2, 101, 2):
+#     num = num + number
+
+# print(num)
+
+# option 2
 num = 0
-for number in range(2, 101, 2):
-    num = num + number
+for number in range(1, 101):
+    if number % 2 == 0:
+        num = num + number
 
 print(num)
