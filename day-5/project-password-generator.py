@@ -20,32 +20,26 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 # random values
 # output concatenating values 
 
-pass_letters = ''
-pass_symb = ''
-pass_num = ''
+password = ''
 
 for num_let in range(1, nr_letters + 1):
-    random_letters = random.randint(0, len(letters) - 1)
-    print(letters[random_letters])
-    pass_letters += letters[random_letters]
+    random_letters = random.choice(letters)
+    password += random_letters
 
 for num_sym in range(1, nr_symbols + 1 ):
-    random_symb = random.randint(0, len(symbols) - 1)
-    pass_symb += symbols[random_symb]
+    random_symb = random.choice(symbols)
+    password += random_symb
 
 for num_number in range(1, nr_numbers + 1):
-    random_numbers = random.randint(0, len(numbers) - 1)
-    pass_num += numbers[random_numbers]
+    random_numbers = random.choice(numbers)
+    password += random_numbers
 
-print(f'Your password is: {pass_letters}{pass_symb}{pass_num}')
+print(password)
 
-str = pass_letters + pass_num + pass_symb
-list_str = list(str)
+list_str = list(password)
 random.shuffle(list_str)
 result = ''.join(list_str)
-print(str)
-# print(list_str)
-print(result)
+print(f'Your password is: {result}')
 
 
 
