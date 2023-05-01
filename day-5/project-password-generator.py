@@ -34,8 +34,6 @@ for num_number in range(1, nr_numbers + 1):
     random_numbers = random.choice(numbers)
     password += random_numbers
 
-print(password)
-
 list_str = list(password)
 random.shuffle(list_str)
 result = ''.join(list_str)
