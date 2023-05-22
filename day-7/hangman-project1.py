@@ -8,7 +8,12 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-print('_' * len(chosen_word))
+display = []
+
+for letter in chosen_word:
+    display.append('_')
+
+print(''.join(display))
 
 #TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 
@@ -25,3 +30,4 @@ for letter in chosen_word:
         print('match')
     else:
         print("wrong")
+
